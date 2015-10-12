@@ -1,0 +1,62 @@
+V "GNAT Lib v4.8"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK
+
+U proj%b		proj.adb		32671bd2 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20121213103024 3ffc8e18
+D a-except.ads		20121213103024 10fcae55
+D a-finali.ads		20121213103024 52ecdc1b
+D a-inteio.ads		20121213103029 f64b89a4
+D a-ioexce.ads		20121213103029 8b9de6cd
+D a-stream.ads		20121213103024 2ca4ee37
+D a-tags.ads		20121213103024 6c0509d0
+D a-textio.ads		20130106093217 386df5d4
+D a-tiinio.ads		20121213103024 aa04e5d6
+D a-unccon.ads		20121213103024 f9eb8f06
+D interfac.ads		20121213103024 129923ea
+D i-cstrea.ads		20130106093208 3286f6aa
+D proj.adb		20151011002051 fc4167a2
+D system.ads		20121213103024 90249111
+D s-crtl.ads		20130106093200 1ea48bce
+D s-exctab.ads		20121213103029 66e51330
+D s-ficobl.ads		20121213103029 55a71d43
+D s-finmas.ads		20121213103024 b95bb341
+D s-finroo.ads		20121213103024 4ff27390
+D s-parame.ads		20121213103024 b6e20cc0
+D s-pooglo.ads		20121213103024 542f33d0
+D s-soflin.ads		20121213103024 24c8153c
+D s-stache.ads		20121213103024 596fc1b4
+D s-stalib.ads		20130106093355 f78bcf95
+D s-stoele.ads		20121213103024 facd7d98
+D s-stoele.adb		20121213103024 afc5dc80
+D s-stopoo.ads		20121213103024 7b8fbeee
+D s-traent.ads		20121213103024 5221ee41
+D s-unstyp.ads		20121213103024 6ae15c76
+D s-wchcon.ads		20121213103024 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 13|5r6 5r19 6r5 6r18
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 13|5w23 6r22
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|5w10 6r9
+206U14*Get 13|17s25
+208U14*Put 13|23s9
+263U14*Put_Line 13|14s9
+X 9 a-tiinio.ads
+55U14*Get 13|22s9[4|18]
+X 13 proj.adb
+8U11*Proj 8b11 24l5 24t9
+9A14 CharArr(character)<integer> 10r33
+10a9 Assignments{9A14} 20m17 23r13
+11i9 NumEmp{integer} 22m13
+12e9 Temp{character} 17m29 18r35 20r35
+15i13 I{integer} 20r29
+
