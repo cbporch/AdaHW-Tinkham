@@ -1,15 +1,19 @@
 V "GNAT Lib v4.8"
 M P W=b
-P ZX
+P SS ZX
 
 RN
 RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
 RV SPARK
 
-U proj%b		proj.adb		32671bd2 NE OO SU
+U proj%b		proj.adb		d1e4fbf7 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 D ada.ads		20121213103024 3ffc8e18
 D a-except.ads		20121213103024 10fcae55
@@ -23,7 +27,7 @@ D a-tiinio.ads		20121213103024 aa04e5d6
 D a-unccon.ads		20121213103024 f9eb8f06
 D interfac.ads		20121213103024 129923ea
 D i-cstrea.ads		20130106093208 3286f6aa
-D proj.adb		20151011002051 fc4167a2
+D proj.adb		20151015011009 1fc28787
 D system.ads		20121213103024 90249111
 D s-crtl.ads		20130106093200 1ea48bce
 D s-exctab.ads		20121213103029 66e51330
@@ -32,6 +36,7 @@ D s-finmas.ads		20121213103024 b95bb341
 D s-finroo.ads		20121213103024 4ff27390
 D s-parame.ads		20121213103024 b6e20cc0
 D s-pooglo.ads		20121213103024 542f33d0
+D s-secsta.ads		20121213103024 eea35a36
 D s-soflin.ads		20121213103024 24c8153c
 D s-stache.ads		20121213103024 596fc1b4
 D s-stalib.ads		20130106093355 f78bcf95
@@ -42,21 +47,41 @@ D s-traent.ads		20121213103024 5221ee41
 D s-unstyp.ads		20121213103024 6ae15c76
 D s-wchcon.ads		20121213103024 bfeb2e3d
 X 1 ada.ads
-16K9*Ada 19e8 13|5r6 5r19 6r5 6r18
+16K9*Ada 19e8 13|9r6 9r19 10r5 10r18
 X 4 a-inteio.ads
-18K13*Integer_Text_IO[9|45] 13|5w23 6r22
+18K13*Integer_Text_IO[9|45] 13|9w23 10r22
 X 8 a-textio.ads
-49K13*Text_IO 471e16 13|5w10 6r9
-206U14*Get 13|17s25
-208U14*Put 13|23s9
-263U14*Put_Line 13|14s9
+49K13*Text_IO 471e16 13|9w10 10r9
+166U14*New_Line 13|84s17
+206U14*Get 13|29s41 69s25
+208U14*Put 13|83s17
+242U14*Put 13|87s17 89s17
+263U14*Put_Line 13|64s9
 X 9 a-tiinio.ads
-55U14*Get 13|22s9[4|18]
+55U14*Get 13|76s9[4|18]
 X 13 proj.adb
-8U11*Proj 8b11 24l5 24t9
-9A14 CharArr(character)<integer> 10r33
-10a9 Assignments{9A14} 20m17 23r13
-11i9 NumEmp{integer} 22m13
-12e9 Temp{character} 17m29 18r35 20r35
-15i13 I{integer} 20r29
+12U11*Proj 12b11 91l5 91t9
+13A14 CharArr(character)<integer> 15r33 40r40 57r38
+15a9 Assignments{13A14} 72m17 83r21 86r29
+17i9 NumEmp{integer} 76m13 78r45 80r43
+18A14 EmpArr(character)<integer><integer> 23r51 24r21 57r52 78r29
+20e9 Temp{character} 29m45 30r51 32r43 69m29 70r35 72r35
+23V18 setEmployees{18A14} 23b18 23>32 36l13 36t25 80s30
+23i32 A{integer} 24r37 26r29
+24a17 E{18A14} 32m33 35r24
+26i21 I{integer} 32r37
+27i29 J{integer} 32r35
+40V18 checkAssignments{boolean} 40b18 40>35 55l13 55t29 86s12
+40a35 Arr{13A14} 45r31 48r39
+41e17 C1{character} 45m25 49r36
+41e21 C2{character} 48m33 49r41
+42i17 N{integer} 46m25 47r34
+44i21 I{integer} 45r35 46r30
+47i29 J{integer} 48r43
+57V18 checkEmployees{boolean} 57b18 57>33 57>47 60l13 60t27
+57a33 As{13A14}
+57a47 Em{18A14}
+67i13 I{integer} 72r29
+78a17 Employees{18A14} 80m17
+82i13 I{integer} 83r33
 
