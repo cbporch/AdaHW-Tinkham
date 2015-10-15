@@ -55,8 +55,35 @@ procedure Proj is
 	end checkAssignments;
 
 	function checkEmployees(As : CharArr; Em : EmpArr) return Boolean is
+		C	:	Character;
+		ModVal	:	Integer;
 	begin -- checkEmployees
-		return False;
+		for N in 1..As'Length loop
+			C := As(N); -- get assignment
+			ModVal := N mod 4;
+			for I in 1..Em'Length loop
+				if C = Em(1,I) then
+					if ModVal = 1 or
+					   ModVal = 2 then
+						-- check phone
+						if Em(2,I) /= '1' then
+							return False;
+						end if;	
+					elsif Modval = 3 then
+						-- check repair
+						if Em(3,I) /= '1' then
+							return False;
+                                                end if;
+					elsif Modval = 0 then
+						-- check network
+						if Em(4,I) /= '1' then
+							return False;
+                                                end if;
+					end if;	
+				end if;
+			end loop;
+		end loop;
+		return True;
 	end checkEmployees;
 
 begin -- Proj
